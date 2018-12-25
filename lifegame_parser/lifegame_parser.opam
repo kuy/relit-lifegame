@@ -1,0 +1,15 @@
+opam-version: "2.0"
+name: "lifgame parser for relit-lifegame"
+version: "0.1"
+maintainer: "Yuki Kodama <endflow.net@gmail.com>"
+author: "Yuki Kodama <endflow.net@gmail.com>"
+homepage: ""
+bug-reports: ""
+license: "MIT"
+dev-repo: ""
+build: [
+  ["dune" "build" "-p" "lifegame_parser"]
+]
+install: ["dune" "install" "lifegame_parser"]
+remove: ["ocamlfind" "remove" "project"]
+depends: "ocamlfind"

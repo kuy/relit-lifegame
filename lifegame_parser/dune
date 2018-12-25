@@ -1,0 +1,13 @@
+(library
+  (name lifegame_parser)
+  (public_name lifegame_parser)
+  (preprocess (pps ppxlib.metaquot))
+  (libraries ocaml-migrate-parsetree
+             ppxlib.metaquot
+             relit_helper))
+
+(ocamllex
+  (modules lexer))
+
+(menhir
+  (modules parser))

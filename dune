@@ -1,2 +1,4 @@
 (executable
- (name lifegame))
+  (name lifegame)
+  (preprocess (staged_pps ppx_relit))
+  (libraries lifegame_parser))
